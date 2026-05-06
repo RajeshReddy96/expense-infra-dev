@@ -2,14 +2,14 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = "5.66.0"
+      version = "6.16.0"
     }
   }
 backend "s3" {
-    bucket = "rajesh-remote-state"
+    bucket = "rajesh-reddy-remote-state"
     key    = "expense-vpc-dev"
     region = "us-east-1"
-    dynamodb_table = "raj-locking"
+    dynamodb_table = "rajesh-locking"
 
 }
 }
